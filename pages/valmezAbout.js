@@ -24,8 +24,7 @@ module.exports = {
 
   async grabContact() {
     let contact = await I.grabTextFrom(this.kontakty);
-    console.log(`tohle je splitovany vysledek: ${contact}`)
-    console.log(`hledany text je >>> ${contact} <<<`)
+    console.log(`hledany text elementu je: >>> ${contact} <<<`)
     return contact;
   }
 
