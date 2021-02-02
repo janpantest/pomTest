@@ -3,8 +3,10 @@ const { I } = inject();
 module.exports = {
 
   // insert your locators and methods here
-  footer: "(//span[@id])[12]",
-  chosenLink: "//h3[./text()='Valašské Meziříčí: Titulní stránka']",
+  // footer: "(//span[@id])[12]",
+  footer: "//div[@style='visibility: visible;']",
+  chosenLink: "//h3/span[./text()='Valašské Meziříčí: Titulní stránka']",
+  // chosenLink: "//h3[./text()='Valašské Meziříčí: Titulní stránka']",
 
   async grabb() {
     I.seeInTitle('Googlem');
