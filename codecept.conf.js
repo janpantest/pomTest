@@ -20,6 +20,10 @@ exports.config = {
     googleResultsPage: './pages/googleResults.js',
     valmezHomePage: './pages/valmezHome.js',
     valmezAboutPage: './pages/valmezAbout.js',
+    seznamHomePage: './pages/seznamHome.js',
+    seznamResultsPage: './pages/seznamResults.js',
+    googleInputPage: './pages/googleInput.js',
+    introPage: './pages/intro.js',
   },
   bootstrap: null,
   mocha: {},
@@ -31,5 +35,12 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     }
+  },
+  rerun: {
+    // how many times all tests should pass
+    minSuccess: 2,
+
+    // how many times to try to rerun all tests
+    maxReruns: 5,
   }
 }
